@@ -80,6 +80,37 @@
 
       var item = [10,10,10,10];
       console.log(item.map(parseInt));
+
+      for (var i = 0; i < 10; i++) {
+      (function timeloger(i) {
+        setTimeout(() => console.log(i),
+         1000 * i)
+      })(i)
+    }
+
+var array = [1,2,3,4];
+
+function elo(v) {
+  return v > 2
+}
+
+
+var bob = array.filter(elo);
+console.log(bob);
+
+var x =1 ;
+f1();
+function f1() {
+  console.log(x);
+  var x =2;
+  console.log(x);
+  f2();
+}
+function f2() {
+  console.log(x);
+}
+
+
   </script>
 
 </body>
